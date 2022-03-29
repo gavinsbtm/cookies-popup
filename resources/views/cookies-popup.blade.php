@@ -127,7 +127,7 @@
 
                     </div>
                     <div class="accept-cookies-info {{ config('cookies-popup.custom_classes.accept_cookies_info') }}">
-                        {{ trans($translationsFile . '.accept-recaptcha-cookies-info') }}
+                        {!! trans($translationsFile . '.accept-recaptcha-cookies-info') !!}
                     </div>
                 </div>
             @endif
