@@ -36,17 +36,13 @@
             <a id="cookies-popup-configure" class="btn {{ config('cookies-popup.custom_classes.btn') }}">{{ trans($translationsFile . '.cookies-popup-configure') }}</a>
             <a id="cookies-popup-accept" class="btn {{ config('cookies-popup.custom_classes.btn') }}">{{ trans($translationsFile . '.cookies-popup-accept') }}</a>
         </div>
-        
-        <div>
-            My Cookies
-        </div>
 
         <div id="cookies-popup-configuration" class="{{ config('cookies-popup.custom_classes.cookies_popup_configuration') }}">
 
             {{--required--}}
             <div>
                 <div class="accept-cookies-checkbox">
-                    <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{{ trans($translationsFile . '.accept-required-cookies-label') }}</div>
+                    <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{!! trans($translationsFile . '.accept-required-cookies-label') !!}</div>
                     <div>
                         <label class="toggle-control">
                             <input type="checkbox" id="required-cookies" checked disabled>
@@ -64,7 +60,7 @@
             @if(config('cookies-popup.configure_preferences'))
                 <div>
                     <div class="accept-cookies-checkbox">
-                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{{ trans($translationsFile . '.accept-preferences-cookies-label') }}</div>
+                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{!! trans($translationsFile . '.accept-preferences-cookies-label') !!}</div>
                         <div>
                             <label class="toggle-control">
                                 <input type="checkbox" id="preferences-cookies" @if($preferencesCookies) checked @endif>
@@ -83,7 +79,7 @@
             @if(config('cookies-popup.configure_analytical'))
                 <div>
                     <div class="accept-cookies-checkbox">
-                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{{ trans($translationsFile . '.accept-analytical-cookies-label') }}</div>
+                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{!! trans($translationsFile . '.accept-analytical-cookies-label') !!}</div>
                         <div>
                             <label class="toggle-control">
                                 <input type="checkbox" id="analytical-cookies" @if($analyticalCookies) checked @endif>
@@ -102,7 +98,7 @@
             @if(config('cookies-popup.configure_advertising'))
                 <div>
                     <div class="accept-cookies-checkbox">
-                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{{ trans($translationsFile . '.accept-advertising-cookies-label') }}</div>
+                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{!! trans($translationsFile . '.accept-advertising-cookies-label') !!}</div>
                         <div>
                             <label class="toggle-control">
                                 <input type="checkbox" id="advertising-cookies" @if($advertisingCookies) checked @endif>
@@ -121,7 +117,7 @@
             @if(config('cookies-popup.configure_recaptcha'))
                 <div>
                     <div class="accept-cookies-checkbox">
-                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{{ trans($translationsFile . '.accept-recaptcha-cookies-label') }}</div>
+                        <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{!! trans($translationsFile . '.accept-recaptcha-cookies-label') !!}</div>
                         <div>
                             <label class="toggle-control">
                                 <input type="checkbox" id="recaptcha-cookies" @if($recaptchaCookies) checked @endif>
@@ -137,7 +133,7 @@
             @endif
 
             <div class="popup-buttons {{ config('cookies-popup.custom_classes.popup_buttons') }}">
-                <a id="cookies-popup-close" class="btn {{ config('cookies-popup.custom_classes.btn') }} {{ config('cookies-popup.custom_classes.cookies_popup_close') }}">{{ trans($translationsFile . '.cookies-popup-close') }}</a>
+                <a id="cookies-popup-close" class="btn {{ config('cookies-popup.custom_classes.btn') }} {!! config('cookies-popup.custom_classes.cookies_popup_close') }}">{{ trans($translationsFile . '.cookies-popup-close') !!}</a>
             </div>
 
         </div>
