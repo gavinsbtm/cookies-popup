@@ -42,7 +42,7 @@
             {{--required--}}
             <div>
                 <div class="accept-cookies-checkbox">
-                    <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{!! trans($translationsFile . '.accept-required-cookies-label') !!}</div>
+                    <div class="accept-cookies-label {{ config('cookies-popup.custom_classes.accept_cookies_label') }}">{{ trans($translationsFile . '.accept-required-cookies-label') }}</div>
                     <div>
                         <label class="toggle-control">
                             <input type="checkbox" id="required-cookies" checked disabled>
@@ -133,7 +133,7 @@
             @endif
 
             <div class="popup-buttons {{ config('cookies-popup.custom_classes.popup_buttons') }}">
-                <a id="cookies-popup-close" class="btn {{ config('cookies-popup.custom_classes.btn') }} {!! config('cookies-popup.custom_classes.cookies_popup_close') }}">{{ trans($translationsFile . '.cookies-popup-close') !!}</a>
+                <a id="cookies-popup-close" class="btn {{ config('cookies-popup.custom_classes.btn') }} {{ config('cookies-popup.custom_classes.cookies_popup_close') }}">{{ trans($translationsFile . '.cookies-popup-close') }}</a>
             </div>
 
         </div>
