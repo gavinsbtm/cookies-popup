@@ -19,6 +19,7 @@
     @php($recaptchaCookies = true)
 @endif
 
+
 {{--Styles--}}
 <style>
     {!! $styles !!}
