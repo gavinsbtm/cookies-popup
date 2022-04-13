@@ -34,8 +34,8 @@
 
         <div class="popup-text {{ config('cookies-popup.custom_classes.popup_text') }}">{!! nl2br(trans($translationsFile . '.cookies-popup-text')) !!}</div>
         <div class="popup-buttons {{ config('cookies-popup.custom_classes.popup_buttons') }}">
-            <a id="cookies-popup-configure" class="btn {{ config('cookies-popup.custom_classes.btn') }}">{{ trans($translationsFile . '.cookies-popup-configure') }}</a>
-            <a id="cookies-popup-accept" class="btn {{ config('cookies-popup.custom_classes.btn') }}">{{ trans($translationsFile . '.cookies-popup-accept') }}</a>
+            <span id="cookies-popup-configure" class="my-2 mx-2 btn {{ config('cookies-popup.custom_classes.btn') }}">{{ trans($translationsFile . '.cookies-popup-configure') }}</span>
+            <span id="cookies-popup-accept" class="my-2 mx-2 btn {{ config('cookies-popup.custom_classes.btn') }}">{{ trans($translationsFile . '.cookies-popup-accept') }}</span>
         </div>
 
         <div id="cookies-popup-configuration" class="{{ config('cookies-popup.custom_classes.cookies_popup_configuration') }}">
@@ -134,7 +134,7 @@
             @endif
 
             <div class="popup-buttons {{ config('cookies-popup.custom_classes.popup_buttons') }}">
-                <a id="cookies-popup-close" class="btn {{ config('cookies-popup.custom_classes.btn') }} {{ config('cookies-popup.custom_classes.cookies_popup_close') }}">{{ trans($translationsFile . '.cookies-popup-close') }}</a>
+                <span id="cookies-popup-close" class="btn {{ config('cookies-popup.custom_classes.btn') }} {{ config('cookies-popup.custom_classes.cookies_popup_close') }}">{{ trans($translationsFile . '.cookies-popup-close') }}</span>
             </div>
 
         </div>
